@@ -88,7 +88,7 @@ $6$ is even, so the answer is `Yes`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:46:16.425Z  
+**Submitted:** 2026-08-12T14:50:25.673Z  
 
 ```java
 import java.util.*;
@@ -100,7 +100,25 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 	 Scanner in = new Scanner(System.in);
-	 int 
+	 int L= in.nextInt();
+	 int R = in.nextInt();
+	 
+	 if(L == R){
+	     return no;
+	 }
+	 if(R-L-1 > 2){
+	     return yes;
+	 }
+	 
+	 else{
+	     if(L+1 % 2 == 0){
+	         return YES;
+	         
+	     }
+	     else {
+	         return no;
+	     }
+	 }
 
 	}
 }
