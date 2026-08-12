@@ -11,19 +11,19 @@ class Codechef
 	 int R = in.nextInt();
 	 
 	 if(L == R){
-	     return no;
+	     System.out.println("no");
 	 }
 	 if(R-L-1 > 2){
-	     return yes;
+	     System.out.println("YES");
 	 }
 	 
 	 else{
 	     if(L+1 % 2 == 0){
-	         return YES;
+	         System.out.println("YES");
 	         
 	     }
 	     else {
-	         return no;
+	         System.out.println("no");
 	     }
 	 }
 
