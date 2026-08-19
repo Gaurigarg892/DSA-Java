@@ -56,18 +56,23 @@ Chef scored $300$ points while the cutoff was $361$, hence he failed to get a go
 
 ## Solution
 
-**Language:** c_cpp  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:13:25.517Z  
+**Submitted:** 2026-08-19T15:15:41.218Z  
 
-```c_cpp
-#include <bits/stdc++.h>
-using namespace std;
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-int main() {
-	// your code goes here
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
 
+	}
 }
 
 ```
