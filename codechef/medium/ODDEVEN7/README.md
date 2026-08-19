@@ -54,7 +54,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:59:38.514Z  
+**Submitted:** 2026-08-19T16:09:19.043Z  
 
 ```java
 import java.util.*;
@@ -74,8 +74,19 @@ class Codechef
 	      arr[j] = in.nextInt();
 	      
 	  }
+	  ArrayList<Integer> subset_even = new ArrayList<>();
+	  ArrayList<Integer> subset_odd = new ArrayList<>();
 	  
 	  
+	  for(int a=0; a<N ;a++){
+	      if(arr[a]%2 == 0){
+	          subset_even.add(arr[a]);
+	          
+	      }
+	      else{
+	          subset_odd.add(arr[a]);
+	      }
+	  }
 	}
 
 	}
