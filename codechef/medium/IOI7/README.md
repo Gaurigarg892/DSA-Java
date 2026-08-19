@@ -59,7 +59,7 @@ Chef scored $300$ points while the cutoff was $361$, hence he failed to get a go
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:19:31.775Z  
+**Submitted:** 2026-08-19T15:20:50.521Z  
 
 ```java
 import java.util.*;
@@ -74,7 +74,7 @@ class Codechef
 		int N = in.nextInt();
 		int G = in.nextInt();
 		
-		if(N>G){
+		if(N>=G){
 		    System.out.println("Yes");
 		  
 		}
