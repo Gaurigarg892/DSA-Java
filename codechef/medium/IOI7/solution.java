@@ -10,7 +10,7 @@ class Codechef
 		int N = in.nextInt();
 		int G = in.nextInt();
 		
-		if(N>G){
+		if(N>=G){
 		    System.out.println("Yes");
 		  
 		}
