@@ -17,7 +17,7 @@ class Codechef
 	  }
 	  ArrayList<Integer> subset_even = new ArrayList<>();
 	  ArrayList<Integer> subset_odd = new ArrayList<>();
-	  
+	  int max =0;
 	  
 	  for(int a=0; a<N ;a++){
 	      if(arr[a]%2 == 0){
@@ -27,7 +27,14 @@ class Codechef
 	      else{
 	          subset_odd.add(arr[a]);
 	      }
+	      
+	      if(subset_even.size()==subset_odd.size())
+	      {
+	          max = subset_even.size() * 2;
+	      }
+	      else {max = (Math.min(subset_even.size() , subset_odd.size()) * 2);}
 	  }
+	  System.out.println(max);
 	}
 
 	}
