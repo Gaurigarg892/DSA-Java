@@ -54,7 +54,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T16:21:49.813Z  
+**Submitted:** 2026-08-19T16:25:31.410Z  
 
 ```java
 import java.util.*;
@@ -91,7 +91,8 @@ class Codechef
 	      {
 	          max = subset_even.size() * 2;
 	      }
-	      else {max = ((Math.max(subset_even.size() , subset_odd.size()) ) - 1);}
+	      else {
+	  max = ((Math.min(subset_even.size() , subset_odd.size()) * 2) + 1);}
 	  }
 	  System.out.println(max);
 	}
