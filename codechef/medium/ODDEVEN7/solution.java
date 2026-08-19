@@ -15,8 +15,19 @@ class Codechef
 	      arr[j] = in.nextInt();
 	      
 	  }
+	  ArrayList<Integer> subset_even = new ArrayList<>();
+	  ArrayList<Integer> subset_odd = new ArrayList<>();
 	  
 	  
+	  for(int a=0; a<N ;a++){
+	      if(arr[a]%2 == 0){
+	          subset_even.add(arr[a]);
+	          
+	      }
+	      else{
+	          subset_odd.add(arr[a]);
+	      }
+	  }
 	}
 
 	}
