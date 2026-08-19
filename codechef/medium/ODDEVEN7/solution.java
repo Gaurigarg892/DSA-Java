@@ -32,7 +32,8 @@ class Codechef
 	      {
 	          max = subset_even.size() * 2;
 	      }
-	      else {max = ((Math.max(subset_even.size() , subset_odd.size()) ) - 1);}
+	      else {
+	  max = ((Math.min(subset_even.size() , subset_odd.size()) * 2) + 1);}
 	  }
 	  System.out.println(max);
 	}
