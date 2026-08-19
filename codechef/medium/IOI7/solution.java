@@ -6,7 +6,17 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner in =new Scanner(System.in);
+		int N = in.nextInt();
+		int G = in.nextInt();
+		
+		if(N>G){
+		    System.out.println("Yes");
+		  
+		}
+		else{
+		    System.out.println("No");
+		}
 
 	}
 }
