@@ -21,7 +21,7 @@ class Codechef
 		    for(int a= 0; a<N; a++){
 		        max_sum = Math.max(max_sum, arr[a]);
 		        for(int b=a+1 ; b<N ; b++){
-		            if(arr[a]<=arr[b]){
+		            if(arr[a]<arr[b]){
 		                sum = arr[a]+arr[b];
 		                max_sum = Math.max(max_sum ,sum);
 		            }
