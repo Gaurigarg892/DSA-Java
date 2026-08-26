@@ -65,7 +65,7 @@ However, it's still optimal to buy only the first item rather than buy any two o
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T16:21:24.730Z  
+**Submitted:** 2026-08-26T16:20:06.192Z  
 
 ```java
 import java.util.*;
@@ -91,7 +91,7 @@ class Codechef
 		    for(int a= 0; a<N; a++){
 		        max_sum = Math.max(max_sum, arr[a]);
 		        for(int b=a+1 ; b<N ; b++){
-		            if(arr[a]<=arr[b]){
+		            if(arr[a]<arr[b]){
 		                sum = arr[a]+arr[b];
 		                max_sum = Math.max(max_sum ,sum);
 		            }
