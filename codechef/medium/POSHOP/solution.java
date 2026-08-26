@@ -20,7 +20,7 @@ class Codechef
 		    int count= 0;
 		    for(int a= 0; a<N; a++){
 		        max_sum = Math.max(max_sum, arr[a]);
-		        for(int b=a ; b<N ; b++){
+		        for(int b=a+1 ; b<N ; b++){
 		            if(arr[a]<arr[b]){
 		                sum = arr[a]+arr[b];
 		            }
