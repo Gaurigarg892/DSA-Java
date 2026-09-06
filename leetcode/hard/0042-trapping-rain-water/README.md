@@ -36,41 +36,34 @@ Output: 9
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 5.26%)  
-**Memory:** 47.6 MB (beats 67.23%)  
-**Submitted:** 2026-09-06T16:23:45.903Z  
+**Runtime:** 1 ms (beats 57.32%)  
+**Memory:** 47.8 MB (beats 54.57%)  
+**Submitted:** 2026-09-06T18:28:27.105Z  
 
 ```java
 class Solution {
     public int trap(int[] height) {
-        int n = height.length;
-       ArrayList<Integer> l_max = new ArrayList<>();
-       ArrayList<Integer> r_max = new ArrayList<>();
+        int ans=0;
+         int left = 0;
+          int right = height.length -1;
+          int l_max = height[0];
+          int r_max = height[height.length - 1];
 
-       l_max.add(height[0]);
-       
+          while(left<right){
+           l_max = Math.max(l_max , height[left]);
+            r_max = Math.max(r_max , height[right]);
 
-        for (int i = 0; i < n; i++) {
-            r_max.add(0);
-        }
-         r_max.set(n - 1, height[n - 1]);
+            if(l_max < r_max ){
+                ans += l_max - height[left];
+                left++;
+             }
 
-       for(int i=1; i<n ; i++){
-        l_max.add(Math.max(l_max.get(i-1), height[i]));
-       }
-
-       for(int i=n-2 ; i>= 0 ; i--){
-       r_max.set(i, Math.max(r_max.get(i + 1), height[i]));
-       }
-       
-
-       int ans = 0;
-       for(int i=0;  i<n ; i++){
-        ans += Math.min(l_max.get(i) , r_max.get(i)) - height[i];
-       }
-
-       return ans;
-        
+             else{
+                ans += r_max -height[right];
+                right--;
+             }
+          }
+        return ans ;
     }
 }
 ```
