@@ -12,6 +12,27 @@ class Codechef
 		    int N =in.nextInt();
 		    String A = in.next();
 		    String B = in.next();
+		    
+		    for(int i=0; i< N ; i++){
+		        if(A.charAt(i) == "a"){
+		            counter1++;
+		            
+		        }
+		        if(B.charAt(i) == "a"){
+		            counter2++;
+		            
+		        }
+		        else{
+		            continue;
+		        }
+		        
+		    }
+		    if(counter1 == counter2){
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("YES");
+		    }
 		}
 
 	}
