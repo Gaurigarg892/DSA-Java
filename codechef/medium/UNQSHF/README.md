@@ -74,7 +74,7 @@ So, no solution exists.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:13:30.123Z  
+**Submitted:** 2026-09-09T15:20:00.120Z  
 
 ```java
 import java.util.*;
