@@ -14,8 +14,33 @@ class Codechef
 	    for(int i=0; i< N ;i++){
 	        A[i]= in.nextInt();
 	    }
+	    int sum = 0;
+	    for(int i=0; i< N ;i++){
+	        sum += A[i];
+	    }
+	    
+	    Arrays.sort(A);
+	    int Sr=0;
+	    int Sb= 0;
+	    int Cb =0;
+	    int Cr =0;
+	    int max =0 ;
 	    
 	    
+	    for(int i =0 ; i< N ; i++){
+	        Sb += A[i];
+	      Cb = i + 1;
+           Sr = sum - Sb;
+            Cr = N - Cb;
+
+    int current = Sr * Cb + Sb * Cr;
+
+    if (current > max) {
+           max = current;
+    }
+}
+
+System.out.println(max);
 	}
 
 	}
