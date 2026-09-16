@@ -56,7 +56,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T15:41:58.472Z  
+**Submitted:** 2026-09-16T16:25:47.491Z  
 
 ```java
 import java.util.*;
@@ -75,8 +75,33 @@ class Codechef
 	    for(int i=0; i< N ;i++){
 	        A[i]= in.nextInt();
 	    }
+	    int sum = 0;
+	    for(int i=0; i< N ;i++){
+	        sum += A[i];
+	    }
+	    
+	    Arrays.sort(A);
+	    int Sr=0;
+	    int Sb= 0;
+	    int Cb =0;
+	    int Cr =0;
+	    int max =0 ;
 	    
 	    
+	    for(int i =0 ; i< N ; i++){
+	        Sb += A[i];
+	      Cb = i + 1;
+           Sr = sum - Sb;
+            Cr = N - Cb;
+
+    int current = Sr * Cb + Sb * Cr;
+
+    if (current > max) {
+           max = current;
+    }
+}
+
+System.out.println(max);
 	}
 
 	}
