@@ -12,7 +12,7 @@ class Codechef
 	    int N = in.nextInt();
 	    int K = in.nextInt();
 	    
-	    if(N-K > 1){
+	    if(N-K > 1 || N==K){
 	        System.out.println("Yes");
 	    }
 	    else{
